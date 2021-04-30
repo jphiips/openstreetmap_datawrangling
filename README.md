@@ -10,3 +10,6 @@ street_audit.py and zip_code_audit.py contain the code for auditing streets and 
 
 schema.py contains the schema
 
+map_parser.py creates the csv files from the xml data
+
+csv_load.py contains the code for loading the csv files into the tables
