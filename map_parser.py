@@ -36,7 +36,7 @@ street_type_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
 
 expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road", 
             "Trail", "Parkway", "Commons","Freeway","Circle","Way","Highway", "Cove",
-            "Terrace","South","East","West","North"
+            "Terrace","South","East","West","North"]
 
 # UPDATE THIS VARIABLE
 mapping = {
@@ -111,11 +111,11 @@ def audit_postcode_tag(element,regex=re.compile(r'\b\S+\.?$', re.IGNORECASE)):
         better_postcode=update_postcode(post_code)
         return better_postcode
     return post_code   
-    """Clean and shape node or way XML element to Python dict"""
+
 
 def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIELDS,
                   problem_chars=PROBLEMCHARS, default_tag_type='regular'):
-    
+    """Clean and shape node or way XML element to Python dict"""    
     
     node_attribs = {}
     way_attribs = {}
