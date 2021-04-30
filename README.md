@@ -6,3 +6,7 @@ datawranglingpaper.pdf is the full write-up of the report of the project
 
 sample.osm is a sample of the osm data for Germantown, TN
 
+street_audit.py and zip_code_audit.py contain the code for auditing streets and zip codes
+
+schema.py contains the schema
+
